@@ -6,19 +6,14 @@ Vue.use(Router)
 export default new Router({
     routes: [
         {
-            path: '/',
+            path: '/intro',
             name: 'intro',
             component: require('@/components/IntroView/IntroView').default
         },
         {
-            path: '/welcome',
-            name: 'welcome-view',
-            component: require('@/components/WelcomeView').default
-        },
-        {
-            path: '/inspire',
-            name: 'inspire',
-            component: require('@/components/InspireView').default
+            path: '/todo',
+            name: 'todo-view',
+            component: require('@/components/ToDoView').default
         },
         {
             path: '*',
